@@ -30,6 +30,6 @@ public class CompteClassique extends Comptes{
         }
     }
     public String renseignementsCompteClassique(){
-        return getTypeDeCompte() + " : le nom de la personne est " + getNom() + ", l'id est le " + getId() + ", le solde du compte est de : " + soldeCompteClassique + "€ et le découvert maximum autorisé est de " + decouvert + "€.";
+        return getTypeDeCompte() + " : le nom du client est " + getNom() + ", l'id est le " + getId() + ", le solde du compte est de : " + soldeCompteClassique + "€ et le découvert maximum autorisé est de " + decouvert + "€.";
     }
 }

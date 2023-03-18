@@ -10,9 +10,11 @@ public class Main {
         CompteClassique fatimaCompteClassique = new CompteClassique("Fatima", 87, 500, "compte classique");
         System.out.println(fatimaCompteClassique.renseignementsCompteClassique());
         fatimaCompteClassique.depotCompteClassique(700);
+        System.out.println(fatimaCompteClassique.renseignementsCompteClassique());
         fatimaCompteClassique.depotCompteClassique(-300);
         System.out.println(fatimaCompteClassique.renseignementsCompteClassique());
         fatimaCompteClassique.retraitCompteClassique(1500);
+        System.out.println(fatimaCompteClassique.renseignementsCompteClassique());
         fatimaCompteClassique.retraitCompteClassique(1350);
         System.out.println(fatimaCompteClassique.renseignementsCompteClassique());
         System.out.println("------------------------------------------------------------------------------");

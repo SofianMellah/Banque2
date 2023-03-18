@@ -25,7 +25,7 @@ public class CompteLivretA extends Comptes{
         }
     }
     public String renseignementsCompteCLivretA(){
-        return getTypeDeCompte() + " : le nom de la personne est " + getNom() + ", l'id est le " + getId() + ", le solde du compte est de : " + soldeCompteLivretA + "€, le taux d'interêt annuel est de 3% et donc à la fin de votre année, si vous restez à " + soldeCompteLivretA + "€ vous gagnerez " + soldeCompteLivretA*tauxInterets + "€, vous seriez donc à " + (soldeCompteLivretA+(soldeCompteLivretA*tauxInterets)) + "€.";
+        return getTypeDeCompte() + " : le nom du client est " + getNom() + ", l'id est le " + getId() + ", le solde du compte est de : " + soldeCompteLivretA + "€, le taux d'interêt annuel est de 3% et donc à la fin de votre année, si vous restez à " + soldeCompteLivretA + "€ vous gagnerez " + soldeCompteLivretA*tauxInterets + "€, vous seriez donc à " + (soldeCompteLivretA+(soldeCompteLivretA*tauxInterets)) + "€.";
     }
 
 
