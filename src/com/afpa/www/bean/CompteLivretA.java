@@ -14,8 +14,8 @@ public class CompteLivretA extends Comptes{
     }
 
     public void depotCompteLivretA(double depotCompteLivretA){
-        this.soldeCompteLivretA = this.soldeCompteLivretA + depotCompteLivretA;
         System.out.println(getTypeDeCompte() + " de " + getNom() + " : vous avez déposé " + depotCompteLivretA + "€ sur votre " + getTypeDeCompte() + ", vous étiez à " + soldeCompteLivretA + "€, vous êtes maintenant à " + (soldeCompteLivretA+depotCompteLivretA) + "€.");
+        this.soldeCompteLivretA = this.soldeCompteLivretA + depotCompteLivretA;
     }
     public void retraitCompteLivretA(double retraitCompteLivretA){
         if (soldeCompteLivretA >= retraitCompteLivretA ) {
@@ -24,7 +24,7 @@ public class CompteLivretA extends Comptes{
             System.out.println(getTypeDeCompte() + " de " + getNom() + " : opération impossible, vous voulez faire un retrait plus élevé que le solde de votre compte bancaire");
         }
     }
-    public String renseignementsCompteCLivretA(){
+    public String renseignementsCompteLivretA(){
         return getTypeDeCompte() + " : le nom du client est " + getNom() + ", l'id est le " + getId() + ", le solde du compte est de : " + soldeCompteLivretA + "€, le taux d'interêt annuel est de 3% et donc à la fin de votre année, si vous restez à " + soldeCompteLivretA + "€ vous gagnerez " + soldeCompteLivretA*tauxInterets + "€, vous seriez donc à " + (soldeCompteLivretA+(soldeCompteLivretA*tauxInterets)) + "€.";
     }
 
