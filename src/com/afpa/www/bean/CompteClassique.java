@@ -21,6 +21,7 @@ public class CompteClassique extends Comptes{
             System.out.println(getTypeDeCompte() + " de " + getNom() + " : vous souhaitez faire un dépôt de " + depotCompteClassique + "€, merci de renseignez une somme valide pour pouvoir faire un dépot.");
         }
     }
+
     public void retraitCompteClassique(double retraitCompteClassique){
         if (soldeCompteClassique + decouvert > retraitCompteClassique) {
             System.out.println(getTypeDeCompte() + " de " + getNom() + " : vous venez de faire un retrait de " + retraitCompteClassique + "€, vous étiez à " + soldeCompteClassique + "€, vous êtes maintenant à " + (soldeCompteClassique-retraitCompteClassique) + "€.");
