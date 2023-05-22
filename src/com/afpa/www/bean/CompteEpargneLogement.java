@@ -3,7 +3,7 @@ package com.afpa.www.bean;
 public class CompteEpargneLogement extends Comptes{
 
     private double soldeCompteEpargneLogement;
-    private double tauxInteret = 1*0.05;
+    private final double tauxInteret = 1*0.05;
     private boolean autorisation = false;
 
     public CompteEpargneLogement(String nom, int id, double soldeCompteEpargneLogement, String typeDeCompte) {
